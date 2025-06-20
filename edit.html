@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Edit Post</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Edit Your Post</h2>
+  <form id="editForm">
+    <input type="text" id="title" placeholder="Post Title" required />
+    <br /><br />
+    <textarea id="content" rows="5" placeholder="Post Content" required></textarea>
+    <br /><br />
+    <button type="submit">Update Post</button>
+  </form>
+
+  <!-- Firebase v9+ compat for old-style code -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+
+  <script src="script.js"></script>
+  <script src="edit.js"></script>
+</body>
+</html>
