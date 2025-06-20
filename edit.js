@@ -1,7 +1,7 @@
 const postId = new URLSearchParams(window.location.search).get('id');
 
 async function loadPost() {
-  const res = await fetch(`http://localhost:3000/api/posts/${postId}`);
+  const res = await fetch(`https://blog-backend-lzlg.onrender.com/api/posts/${postId}`);
   const post = await res.json();
 
   document.getElementById('title').value = post.title;
@@ -22,7 +22,7 @@ form.addEventListener('submit', async (e) => {
 
   const idToken = await user.getIdToken();
 
-  const res = await fetch(`http://localhost:3000/api/posts/${postId}`, {
+  const res = await fetch(`https://blog-backend-lzlg.onrender.com/api/posts/${postId}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json',
