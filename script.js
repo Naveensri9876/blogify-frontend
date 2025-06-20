@@ -9,7 +9,7 @@ const firebaseConfig = {
 
 firebase.initializeApp(firebaseConfig);
 const auth = firebase.auth();
-const API = "https://blog-backend-kixj.onrender.com";
+const API = "https://blog-backend-lzlg.onrender.com";
 
 // ✅ Create a new post
 async function createPost() {
