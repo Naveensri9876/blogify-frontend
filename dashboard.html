@@ -1,0 +1,16 @@
+<!-- dashboard.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
+  <script src="script.js"></script>
+</head>
+<body onload="loadPosts()">
+  <h2>All Blog Posts</h2>
+  <button onclick="logout()">Logout</button>
+  <div id="posts"></div>
+</body>
+</html>
