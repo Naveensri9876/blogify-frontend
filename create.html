@@ -3,15 +3,25 @@
 <head>
   <title>Create Post</title>
   <link rel="stylesheet" href="style.css" />
+
+  <!-- Firebase SDK -->
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app-compat.js"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth-compat.js"></script>
-  
-  <script src="script.js"></script>
+
+  <!-- Your app logic -->
+  <script defer src="script.js"></script>
 </head>
 <body>
   <h2>Create a Blog Post</h2>
-  <input type="text" id="title" placeholder="Title" />
-  <textarea id="content" placeholder="Write your blog here..."></textarea>
-  <button onclick="createPost()">Post</button>
+
+  <div>
+    <input type="text" id="title" placeholder="Title" required />
+  </div>
+  <div>
+    <textarea id="content" placeholder="Write your blog here..." required></textarea>
+  </div>
+  <div>
+    <button onclick="createPost()">Post</button>
+  </div>
 </body>
 </html>
