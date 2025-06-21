@@ -37,3 +37,16 @@ button:hover {
   border-radius: 5px;
   border-left: 4px solid #007BFF;
 }
+button {
+  margin: 5px;
+  padding: 8px 16px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
